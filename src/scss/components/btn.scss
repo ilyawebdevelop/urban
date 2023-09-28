@@ -43,6 +43,9 @@
 }
 .catalog-main__btn {
     margin-top: 70px;
+    @media(max-width: 767px){
+        margin-top: 40px;
+    }
 }
 .catalog-filter__btn{
     column-gap: 10px;
