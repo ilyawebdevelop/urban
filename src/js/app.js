@@ -66,10 +66,17 @@ new fullpage('#fullpage', {
 let catalogBtn = document.querySelector('.header__menu');
 let catalogMenu = document.querySelector('.header-catalog');
 let catalogBtnClose = document.querySelector('.header-catalog__close');
+const bodyEl = document.querySelector('body');
 
 catalogBtn.addEventListener('click', () => {
     catalogMenu.classList.add('active');
+    bodyEl.classList.add('hidden');
+    fullpage_api.setAutoScrolling(false);
+    
 });
 catalogBtnClose.addEventListener('click', () => {
     catalogMenu.classList.remove('active');
+    fullpage_api.setAutoScrolling(true);
 });
+
+

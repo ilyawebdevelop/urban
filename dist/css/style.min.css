@@ -11158,7 +11158,7 @@ html {
 }
 
 body.hidden {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 input::-webkit-outer-spin-button,
@@ -11670,6 +11670,8 @@ h5 {
   background-color: #000;
   z-index: 1;
   transition: opactity 0.2s linear, transform 0.2s linear;
+  max-height: 100vh;
+  overflow: scroll;
 }
 @media (max-width: 991px) {
   .header-catalog {

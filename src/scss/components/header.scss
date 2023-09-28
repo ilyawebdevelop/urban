@@ -39,6 +39,8 @@
         background-color: #000;
         z-index: 1;
         transition: opactity .2s linear, transform .2s linear;
+        max-height: 100vh;
+        overflow: scroll;
 
         @media(max-width: 991px) {
             padding-top: 15px;
