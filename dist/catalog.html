@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Каталог</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+
+<div id="fullpage">
+    <div class="section">
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__left">
+                        <button class="header__menu d-flex align-items-center">
+                            <!-- Hamburger Menu -->
+                            <div class="hamburger" id="toggle">
+                                <div class="top-bun"></div>
+                                <div class="meat"></div>
+                            </div><!-- /Hamburger Menu -->
+                            <span>Каталог</span>
+                        </button><!-- /header__menu -->
+                        <div class="socials">
+                            <ul class="socials-list">
+                                <li><a href="#" target="_blank">VK</a></li>
+                                <li><a href="#" target="_blank">InsT</a></li>
+                                <li><a href="#" target="_blank">TeleGram</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- /header__left -->
+                    <a href="/" class="header__logo logo"><img src="img/footer/logo.png" alt="logo"></a>
+                    <div class="header__right d-flex align-items-center">
+                        <a href="tel:8995013080" class="header__phone">8 (995) 301-30-80</a>
+                        <a href="#" class="header__cart">
+                            <img src="img/icons/cart-black.svg" alt="icon" class="header__cart-icon">
+                            <span class="header__cart-count">3</span>
+                        </a>
+                    </div><!-- /header__right -->
+                </div>
+            </div>
+        </header>	
+		<section class="page-head">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="page-title">
+                Каталог
+            </h1>
+            <div class="breadcrumbs">
+                <a href="#">Главная страница</a>
+                <span>Каталог</span>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+	
+		<!-- catalog -->
+<section class="catalog-category">
+    <div class="container">
+        <ul class="catalog-category__list">
+            <li><a href="#">Все коллекции</a></li>
+            <li class="active"><a href="#">Леггинсы</a></li>
+            <li><a href="#">Топики</a></li>
+            <li><a href="#">Верхняя одежда</a></li>
+            <li><a href="#">Шорты</a></li>
+            <li><a href="#">Рубашки</a></li>
+            <li><a href="#">Джоггеры</a></li>
+            <li><a href="#">Толстовки</a></li>
+        </ul>
+    </div>
+</section>
+<section class="catalog" id="catalog">
+    <div class="container">
+        <div class="catalog-action">
+            <div class="catalog-filter">
+                <button class="catalog-filter__btn btn btn--light">
+                    <img src="img/icons/filter.svg" alt="icon" class="catalog-filter__img">
+                    <span>Фильтры</span>
+                </button>
+            </div>
+            <div class="catalog-sort">
+                <span class="catalog-sort__name">Сортировать:</span>
+                <select name="catalog-select" id="catalog-select">
+                    <option value="1">Стандартная сортировка</option>
+                    <option value="2">Сортировать по дате</option>
+                </select>
+            </div>
+        </div><!-- /catalog-action -->
+        <ul class="catalog__list">
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-6.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">32 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1">
+                                <label for="size-1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3">
+                                <label for="size-3">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4">
+                                <label for="size-4">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-5.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз оверсайз </a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">3 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-4.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">15 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                                    
+
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-3.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">3 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-2.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">3 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-1.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">3 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-6.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">3 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+            <li class="product-card">
+                <a href="product.html" class="product-card__img">
+                    <img src="img/admin/catalog/catalog-6.png" alt="product">
+                </a>
+                <h3 class="product-card__title text-center underline-hover-btn">
+                    <a href="product.html">Пиджак оверсайз</a>
+                </h3>
+                <span class="product-card__price d-block mx-auto text-center">3 350 ₽</span>
+                <div class="product-card__action">
+                    <div class="product-card__size-container d-flex justify-content-between align-items-center">
+                        <div class="product-card__size-list">
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-1_1">
+                                <label for="size-1_1">
+                                    XS
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-2_1">
+                                <label for="size-2">
+                                    S
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-3_1">
+                                <label for="size-3_2">
+                                    M
+                                </label>
+                            </div>
+                            <div class="product-card__size-item">
+                                <input type="checkbox" class="product-card__size" hidden id="size-4_1">
+                                <label for="size-4_1">
+                                    L
+                                </label>
+                            </div>
+
+                        </div>
+                        <button class="product-card__play">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn--purple product-card__btn">в корзину</a>
+                </div>
+            </li><!-- /product-card -->
+        </ul>
+
+        <div class="catalog-count">
+            1 - 9 из 16
+        </div>
+        <button class="btn btn--black loadmore">Показать еще</button>
+
+    </div>
+</section>
+
+<section class="catalog-footer">
+    <div class="container">
+        <div class="catalog-footer__wrapper">
+            <div class="catalog-footer__item">
+                <a href="#" target="_blank">Доставка и оплата</a>
+            </div>
+            <div class="catalog-footer__item">
+                <a href="#" target="_blank">Условия возврата</a>
+            </div>
+            <div class="catalog-footer__item">
+                <a href="#" target="_blank">Адреса магазинов</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="/" class="footer__logo logo">
+                    <img src="img/footer/logo.png" alt="logo">
+                </a>
+
+                <div class="copyright">
+                    © 2020 - 2023 Одежда URBAN QUEEN.
+                    Все права защищены.
+                </div>
+                <div class="socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="#">VK</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#">Inst</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#">TeleGram</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div><!-- /footer__left -->
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Покупателям</a></li>
+                    <li><a href="#">Условия возврата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Магазины</a></li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <li><a href="#">Леггинсы</a></li>
+                    <li><a href="#">Топики</a></li>
+                    <li><a href="#">Верхняя одежда</a></li>
+                    <li><a href="#">Шорты</a></li>
+                    <li><a href="#">Рубашки</a></li>
+                    <li><a href="#">Джоггеры</a></li>
+                    <li><a href="#">Толстовки</a></li>
+                </ul>
+            </nav>
+            <div class="footer__right">
+                <div class="footer__contacts">
+                    <a href="tel:89953013080" class="footer__phone">8 (995) 301-30-80</a>
+                    <p class="footer__descr">
+                        Казань, ул. Ибрагимова, 56<br>
+                        ТЦ “Авеню”, 2 эт, универмаг “НОВЫЙ”
+                    </p>
+                </div>
+                <img src="img/footer/cards.svg" alt="image" class="footer__cards">
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+</div>
+		<!-- modal -->
+<!-- product -->
+<div class="modal fade modal-product" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-product__head d-flex align-items-center justify-content-between">
+        <h2>Об изделии</h2>
+
+        <button type="button" class="btn-close-product" data-dismiss="modal" aria-label="Close">
+          <span>ЗАКРЫТЬ</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div><!-- /modal-product__head -->
+
+      <div class="text-content">
+        <p>
+          Мы поддерживаем ваше стремление к успеху, равноправию и самовыражению. Мы вдохновляемся неповторимостью каждой
+          женщины, ее естественной красотой и врожденным чувством стиля. Наша одежда поможет раскрыть потенциал и станет
+          инструментом для выражения силы и элегантности, которые присущи каждой из нас.
+        </p>
+      </div>
+
+
+      <div class="product-params">
+        <ul>
+          <li>
+            Длина: 75 см
+          </li>
+          <li>
+            99% шерсть, 1% шёлк 99% шерсть, 1% шёлк 99% шерсть, 1% шёлк
+          </li>
+          <li>
+            Чёрный цвет
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Длина: 75 см
+          </li>
+          <li>
+            99% шерсть, 1% шёлк
+          </li>
+          <li>
+            Чёрный цвет
+          </li>
+        </ul>
+      </div><!-- /product-params -->
+      <div class="text-content text-content-p--0">
+        <p>
+          38 x 44 x 21 см (длина x высота x ширина)
+        </p><br><br>
+        <p>
+          Канва Damier Graphite
+          Регулируемые плечевые ремни
+          Отделка из яловой кожи
+          Фурнитура серебристого цвета
+          Клапан
+          Застёжки-кнопки
+          Шнурок-кулиска
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

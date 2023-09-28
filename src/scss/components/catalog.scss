@@ -1,0 +1,200 @@
+// catalog
+.catalog {
+    padding-bottom: 100px;
+    &-main {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__title {
+            margin-bottom: 70px;
+        }
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 95px;
+            padding-right: 140px;
+            padding-left: 140px;
+
+            row-gap: 45px;
+        }
+
+        &__item {
+            grid-column: 6 span;
+        }
+    }
+}
+
+.product-card {
+    &__img {
+        margin-bottom: 22px;
+
+        &:hover {
+            &+.underline-hover-btn {
+
+                &:before {
+                    transform: none;
+                    opacity: 1;
+                    transition-duration: .2s;
+                }
+            }
+        }
+
+        img {
+            height: 625px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        width: fit-content;
+    }
+
+    &__price {
+        opacity: .6;
+    }
+}
+
+.catalog-category {
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .15);
+    &__list {
+        display: flex;
+        column-gap: 45px;
+        li {
+            &.active {
+                a {
+                    border-bottom: 1px solid #000;
+                }
+            }
+            a {
+                border-bottom: 1px solid transparent;
+                padding-top: 26px;
+                padding-bottom: 26px;
+                transition: border-color .2s linear;
+                &:hover {
+                    border-color: #000;
+                }
+            }
+        }
+    }
+}
+.catalog-action{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.catalog-sort__name {
+    color: rgba(0, 0, 0, 0.60);
+    line-height: 22px;
+}
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 22px;
+    row-gap: 45px;
+    margin-bottom: 60px;
+    .product-card {
+        grid-column: 4 span;
+        position: relative;
+        transition: box-shadow .2s linear;
+        .product-card__action {
+            padding-left: 27px;
+            padding-right: 27px;
+            padding-bottom: 27px;
+        }
+        &:hover {
+            box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
+            .product-card__action {
+                opacity: 1;
+                transition: opacity .2s linear;
+            }
+        }
+        .product-card__action {
+            position: absolute;
+            width: 100%;
+            background-color: #fff;
+            z-index: 1;
+            opacity: 0;
+        }
+    }
+}
+.product-card__play {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($color: #000000, $alpha: .5);
+    border-radius: 50%;
+    svg {
+        fill: #000;
+        width: 8px;
+    }
+}
+.product-card__size-list {
+    column-gap: 19px;
+    display: flex;
+    label {
+        color: rgba($color: #000000, $alpha: .5);
+        cursor: pointer;
+        transition: color .2s linear;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+.catalog-count {
+    opacity: .5;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.catalog-footer {
+    border-top: 1px solid #EEEBE5;
+    border-bottom: 1px solid #EEEBE5;
+    padding-bottom: 0;
+    
+    &__wrapper {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        a {            
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-transform: uppercase;
+            width: fit-content;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                right: -12px;
+                top: 40px;
+                background: url('@img/icons/socials-arrow.svg') no-repeat right center / 8px;
+                width: 8px;
+                height: 8px;              
+                transition: opacity .2s linear;
+            }
+        }
+    }
+    
+}
+.catalog-footer__item{
+    grid-column: 4 span;
+    border-right: 1px solid #EEEBE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    &:nth-child(1){
+        border-left: 1px solid #EEEBE5;
+    }
+}

@@ -1,0 +1,82 @@
+// Footer
+.footer {
+    background-color: #F6F4F0;
+    padding-top: 73px;
+    padding-bottom: 80px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+    }
+
+    &__left {
+        grid-column: 4 span;
+    }
+
+    &__right {
+        grid-column: 3 span;
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+
+    &__descr {
+        opacity: .5;
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    &__nav {
+        display: flex;
+        grid-column: 5 span;
+        column-gap: 65px;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            li {
+                a {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+    &__cards {
+        margin-left: auto;
+    }
+    &__logo {
+        margin-bottom: 30px;
+        img {
+            width: 90px;
+        }
+    }
+    .copyright {
+        opacity: .5;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 41px;
+        margin-top: 28px;
+        max-width: 275px;
+    }
+    .socials {
+        &__list {
+            display: flex;
+            column-gap: 22px;
+            text-transform: uppercase;
+            line-height: 16px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.breadcrumbs {
+    display: flex;
+    column-gap: 10px;   
+    span {
+        opacity: .6;
+    }
+    a {
+        opacity: .6;
+        transition: opacity .2s linear;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

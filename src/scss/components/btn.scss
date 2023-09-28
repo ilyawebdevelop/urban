@@ -1,0 +1,135 @@
+// btn
+
+.btn {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: fit-content;
+    border-radius: 0;
+    text-transform: uppercase;
+
+    &--light {
+        border: 1px solid #C19CC4;
+        background: rgba(0, 0, 0, 0.05);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        color: #fff;
+        -webkit-transition: background .2s;
+        -o-transition: background .2s;
+
+        &:hover {
+            // -webkit-backdrop-filter: blur(0);
+            // backdrop-filter: blur(0);
+            background: rgba(0, 0, 0, 0.55);
+        }
+    }
+    &--purple {
+        background: #C19CC4;
+        color: #fff;
+        transition: background .2s linear;
+        &:hover {
+          background: #967299;
+        }
+    }
+    &--black {
+        background-color: #000;
+        color: #fff;
+    }
+}
+.catalog-main__btn {
+    margin-top: 70px;
+}
+.catalog-filter__btn{
+    column-gap: 10px;
+    background: transparent;
+    height: 65px;
+    &:hover {
+        background: transparent;
+    }
+    span {
+        color: #000;
+    }
+}
+.product-card__btn{
+    width: 100%;
+    margin-top: 23px;
+}
+.loadmore {
+    width: 100%;
+}
+.contacts__btn {
+    margin-top: 150px;
+    color: #000;
+    background-color: transparent;
+    &:hover {
+        color: #fff;
+        background-color: #967299;
+    }
+}
+@media(max-width: 1920px){
+    .contacts__btn {
+        margin-top: 5vw;
+    }
+}
+.cart__result-btn{
+    width: 100%;
+    margin-top: 30px;
+}
+.checkout__result-btn {
+    margin-top: 100px;
+    margin-bottom: 45px;
+    width: 100%;  
+}
+.product__btn-whatsapp {
+    background-color: #25D366;
+    height: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s linear;
+    &:hover {
+        background-color: #1aa54d;
+    }
+}
+.product__btn-modal {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    column-gap: 23px;
+    margin-bottom: 15px;
+    span {
+        border-bottom: 1px solid transparent;
+        transition: border-color .2s linear;
+    }
+    &:hover {
+        span {
+            border-color: #000;
+        }
+        svg {
+            opacity: 1;
+            transform: translateX(0);
+        }
+       
+    }
+    svg {
+        transition: opacity .2s linear, transform .2s linear;
+        opacity: 0;
+        position: relative;
+        transform: translateX(-10px);
+    }
+}
+.header-catalog__btn {
+    margin-top: 50px;
+    @media(max-width: 767px){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

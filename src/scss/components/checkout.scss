@@ -1,0 +1,151 @@
+.checkout {
+  padding-top: 50px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+
+  &__left {
+    grid-column: 8 span;
+  }
+
+  &__right {
+    grid-column: 4 span;
+  }
+
+  &__result {
+    background: #F6F4F0;
+    padding-top: 44px;
+    padding-right: 39px;
+    padding-bottom: 44px;
+    padding-left: 39px;
+
+    &-title {
+      margin-bottom: 32px;
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    &-text {
+      max-width: 435px;
+      color: #626260;
+
+      a {
+        color: #9B7A9B;
+        text-decoration: underline;
+        display: inline;
+        transition: color .2s linear;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    &-item {
+      display: grid;
+      grid-template-columns: max-content auto max-content;
+      column-gap: 13px;
+
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+
+      span {
+        &:nth-child(2) {
+          border-bottom: 1px dashed #C5C5C5;
+          position: relative;
+          bottom: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.checkout-block {
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 35px;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-image: linear-gradient();
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    row-gap: 16px;
+  }
+
+  &__item {
+    grid-column: 6 span;
+  }
+}
+
+.checkout-block__item_radio {
+  position: relative;
+  &:hover {
+    label {
+      color: #9B7A9B;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked {
+      &+label {
+        border: 1px solid #C19CC4;
+      }
+    }
+  }
+
+  label {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    line-height: 14px;
+    width: 100%;
+    padding-right: 64px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: color .2s linear;
+  }
+}
+
+.checkout-block__item-alert {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.checkout-block__item {
+  position: relative;
+}
+
+.checkout-block__item-name {
+  position: absolute;
+  left: 25px;
+  top: -12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  color: rgba($color: #0C0B0E, $alpha: .4);  
+  font-size: 11px;
+  font-weight: 500;
+}
+.checkout-block__item--full {
+  grid-column: 12 span;
+}
