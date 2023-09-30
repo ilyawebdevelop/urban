@@ -1,11 +1,19 @@
 .services {
     padding-top: 100px;
+    @media(max-width: 767px){
+        padding-top: 50px;
+    }
     &__title {
         text-transform: unset;
         margin-bottom: 70px;
         font-size: 36px;     
         font-weight: 400;
         line-height: 36px;      
+        @media(max-width: 767px){
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 22px;
+        }
     }
     &__list {
         display: grid;
@@ -15,6 +23,9 @@
     }
     &__item {
         grid-column: 6 span;
+        @media(max-width: 991px){
+            grid-column: 12 span;
+        }
        
         &-logo {           
             position: relative;
@@ -26,26 +37,45 @@
                 top: 50%;
                 transform: translateY(-50%);
                 width: 132px;
+                @media(max-width: 575px){
+                    width: 25vw;
+                }
             }
         }
         &-img {
             height: 300px;
             width: 100%;
             object-fit: cover;
+            @media(max-width: 575px){
+                height: 54vw;
+            }
             &-wrapper {
               display: grid;
               grid-template-columns: 225px auto;
               background-color: #F3F3F3;
               padding-right: 70px;
+              @media(max-width: 991px){
+                padding-right: 0;
+              }
+              @media(max-width: 575px){
+                grid-template-columns: 50% 50%;
+              }
             }
         }
         &-title {
             margin-top: 30px;
             margin-bottom: 25px;
+            @media(max-width: 575px){
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
         }
         &-descr {
             line-height: 22px;
             max-width: 545px;
+            @media(max-width: 575px){
+                line-height: 20px;
+            }
         }
         .socials {
             margin-top: 22px;
