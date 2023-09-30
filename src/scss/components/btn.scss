@@ -87,6 +87,10 @@
     margin-top: 100px;
     margin-bottom: 45px;
     width: 100%;  
+    @media(max-width: 1199px){
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }
 .product__btn-whatsapp {
     background-color: #25D366;

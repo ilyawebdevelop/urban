@@ -1,18 +1,27 @@
 .checkout {
   padding-top: 50px;
+  @media(max-width: 767px){
+    padding-top: 30px;
+  }
 
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
+    column-gap: 24px;      
   }
 
   &__left {
     grid-column: 8 span;
+    @media(max-width: 991px){
+      grid-column: 12 span;
+    }
   }
 
   &__right {
     grid-column: 4 span;
+    @media(max-width: 991px){
+      grid-column: 12 span;
+    }
   }
 
   &__result {
@@ -21,6 +30,9 @@
     padding-right: 39px;
     padding-bottom: 44px;
     padding-left: 39px;
+    @media(max-width: 1199px){
+      padding: 25px;
+    }
 
     &-title {
       margin-bottom: 32px;
@@ -28,11 +40,18 @@
       line-height: 24px;
       text-transform: uppercase;
       display: block;
+      @media(max-width: 767px){
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
 
     &-text {
       max-width: 435px;
       color: #626260;
+      @media(max-width: 1199px){
+        line-height: 20px;
+      }
 
       a {
         color: #9B7A9B;
@@ -71,12 +90,20 @@
 
 .checkout-block {
   margin-bottom: 50px;
+  @media(max-width: 767px){
+    margin-bottom: 30px;
+  }
 
   &__title {
     margin-bottom: 35px;
     font-size: 24px;
     text-transform: uppercase;
-    background-image: linear-gradient();
+    @media(max-width: 767px){
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+
   }
 
   &__grid {
@@ -84,10 +111,16 @@
     grid-template-columns: repeat(12, 1fr);
     column-gap: 24px;
     row-gap: 16px;
+    @media(max-width: 767px){
+      column-gap: 17px;
+    }
   }
 
   &__item {
     grid-column: 6 span;
+    @media(max-width: 575px){
+      grid-column: 12 span;
+    }
   }
 }
 
@@ -120,6 +153,11 @@
     padding-left: 30px;
     cursor: pointer;
     transition: color .2s linear;
+    @media(max-width: 767px){
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 20px;
+    }
   }
 }
 
@@ -129,6 +167,14 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  @media(max-width: 767px){
+    right: 20px;
+    img {
+      @media(max-width: 767px){
+        width: 20px;
+      }
+    }
+  }
 }
 
 .checkout-block__item {
