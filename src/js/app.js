@@ -19,6 +19,17 @@ var mySwiperAbout = new Swiper(aboutSlider, {
     speed: 800,
     loop: true,
     centeredSlides: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    },
 });
 
 // Инициализация слайдера product-slider
@@ -46,7 +57,7 @@ document.querySelectorAll('.product').forEach(n => {
         },
         thumbs: { // указываем на превью слайдер
             swiper: {
-                el: n.querySelector('.production-thumb-slider'),      
+                el: n.querySelector('.production-thumb-slider'),
                 slidesPerView: 4,
                 spaceBetween: 20,
                 direction: 'vertical',
@@ -72,7 +83,7 @@ catalogBtn.addEventListener('click', () => {
     catalogMenu.classList.add('active');
     bodyEl.classList.add('hidden');
     fullpage_api.setAutoScrolling(false);
-    
+
 });
 catalogBtnClose.addEventListener('click', () => {
     catalogMenu.classList.remove('active');

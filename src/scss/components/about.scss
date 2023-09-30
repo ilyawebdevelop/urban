@@ -4,6 +4,10 @@
     background: #F6F4F0;
     padding-bottom: 0;
     margin-bottom: 150px;
+    @media(max-width: 991px){
+        overflow: hidden;
+        margin-bottom: 0;
+    }
 
     &__title {
         margin-bottom: 49px;
@@ -35,6 +39,9 @@
         &.swiper-slide-active {
             img {
                 height: 580px;
+                @media(max-width: 991px){
+                    height: 470px;
+                }
             }
 
             .about-slide__btn {
@@ -60,6 +67,12 @@
             z-index: 1;
             opacity: 0;
             transition: opacity .4s linear;
+            @media(max-width: 991px){
+                bottom: 25px;
+            }
+            @media(max-width: 575px){
+                font-size: 13px;
+            }
         }
 
         &__btn {
@@ -77,10 +90,17 @@
             border-radius: 50%;
             display: none;
             z-index: 1;
+            @media(max-width: 767px){
+                width: 80px;
+                height: 80px;
+            }
 
             svg {
                 width: 32px;
                 fill: #fff;
+                @media(max-width: 767px){
+                    width: 24px;
+                }
             }
         }
 
@@ -90,6 +110,9 @@
             object-fit: cover;
             transition: height .2s linear;
             object-position: top;
+            @media(max-width: 991px){
+                height: 350px;
+            }
         }
 
         &__btn {
@@ -99,8 +122,13 @@
 
     &-slider {
         margin-top: 60px;
-        height: 580px;
+        height: unset;
         margin-bottom: -150px;
+        @media(max-width: 991px){
+            overflow: visible;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
 
         .swiper-wrapper {
             align-items: center;
