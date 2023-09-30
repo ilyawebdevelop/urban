@@ -241,6 +241,10 @@ h5 {
   border-bottom: 1px solid rgba($color: #000000, $alpha: .15);
   padding-top: 50px;
   padding-bottom: 50px;
+  @media(max-width: 1500px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   &--sm {
     padding-top: 25px;

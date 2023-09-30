@@ -1,6 +1,11 @@
 .breadcrumbs {
     display: flex;
     column-gap: 10px;   
+    row-gap: 10px;
+    flex-wrap: wrap;
+    @media(max-width: 767px){
+        font-size: 14px;
+    }
     span {
         opacity: .6;
     }

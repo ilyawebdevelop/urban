@@ -16,8 +16,8 @@
         svg {
             width: 40px;
             height: 40px;
-            fill: #fff;
-            stroke: #fff;
+            fill: #000;
+            stroke: #000;
 
             @media(max-width: 575px) {
                 width: 30px;
@@ -326,9 +326,13 @@
                 color: #fff;
             }
         }
-
+       
         .header__phone {
             color: #fff;
+            svg {
+                stroke: #fff;
+                fill: #fff;
+            }
         }
 
         .header__logo img {

@@ -11367,6 +11367,12 @@ h5 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+@media (max-width: 1500px) {
+  .page-head {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .page-head--sm {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -11653,8 +11659,8 @@ h5 {
 .header__phone svg {
   width: 40px;
   height: 40px;
-  fill: #fff;
-  stroke: #fff;
+  fill: #000;
+  stroke: #000;
 }
 @media (max-width: 575px) {
   .header__phone svg {
@@ -11949,6 +11955,10 @@ h5 {
 }
 .header--white .header__phone {
   color: #fff;
+}
+.header--white .header__phone svg {
+  stroke: #fff;
+  fill: #fff;
 }
 .header--white .header__logo img {
   width: 90px;
@@ -12583,6 +12593,13 @@ h5 {
 .breadcrumbs {
   display: flex;
   column-gap: 10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .breadcrumbs {
+    font-size: 14px;
+  }
 }
 .breadcrumbs span {
   opacity: 0.6;
@@ -12599,11 +12616,28 @@ h5 {
   position: relative;
   padding-bottom: 0;
 }
+@media (max-width: 1199px) {
+  .contacts {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 1500px) {
+  .contacts__map {
+    height: 100%;
+  }
+}
 .contacts__left {
   position: absolute;
   left: 0;
   width: calc(100% - (100% - 458px) / 2);
   height: 755px;
+}
+@media (max-width: 1500px) {
+  .contacts__left {
+    height: 100%;
+    width: 100%;
+    position: unset;
+  }
 }
 .contacts__left iframe {
   width: 100%;
@@ -12615,8 +12649,19 @@ h5 {
     height: auto;
   }
 }
+@media (max-width: 1500px) {
+  .contacts__left iframe {
+    height: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .contacts__left iframe {
+    height: 300px;
+  }
+}
 .contacts__right {
   width: 320px;
+  min-width: 320px;
   margin-right: 50px;
 }
 .contacts .container {
@@ -12630,8 +12675,23 @@ h5 {
     min-height: 40vw;
   }
 }
+@media (max-width: 1600px) {
+  .contacts .container {
+    column-gap: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .contacts .container {
+    flex-direction: column;
+  }
+}
 .contacts .socials {
   margin-top: 70px;
+}
+@media (max-width: 1199px) {
+  .contacts .socials {
+    margin-top: 50px;
+  }
 }
 .contacts .socials ul {
   display: flex;
@@ -12665,6 +12725,13 @@ h5 {
   line-height: 32px;
   text-transform: uppercase;
   margin-bottom: 50px;
+}
+@media (max-width: 1199px) {
+  .contacts-tel {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__right {
