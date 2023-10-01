@@ -6,6 +6,18 @@
     padding-top: 47px;
     padding-bottom: 43px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    @media(max-width: 1500px){
+      padding-top: 25px;
+      padding-bottom: 25px;
+      column-gap: 50px;
+    }
+    @media(max-width: 991px){
+      grid-template-columns: auto 100px 229px;
+      column-gap: 30px;
+    }
+    @media(max-width: 767px){
+      display: none;
+    }
     span {
       text-transform: uppercase;
       font-size: 14px;
@@ -22,6 +34,21 @@
     column-gap: 100px;
     padding-top: 45px;
     padding-bottom: 45px;
+    @media(max-width: 1500px){
+      padding-top: 25px;
+      padding-bottom: 25px;
+      column-gap: 50px;
+    }
+    @media(max-width: 991px){
+      grid-template-columns: auto 100px 229px;
+      column-gap: 30px;
+    }
+    @media(max-width: 575px){
+      flex-direction: column;
+      display: flex;
+      align-items: flex-start;
+      row-gap: 20px;
+    }
     &:not(:last-child){
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     }
@@ -29,10 +56,25 @@
       display: flex;
       align-items: center;
       column-gap: 75px;
+      @media(max-width: 1199px){
+        column-gap: 40px;
+      }
+      @media(max-width: 991px){
+        column-gap: 20px;
+      }
+      @media(max-width: 767px){
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+      }
     }
     &-right {
       display: flex;
       column-gap: 75px;
+      @media(max-width: 991px){
+        column-gap: 40px;
+        // justify-content: flex-end;
+      }
     }
     &-remove {
       display: flex;
@@ -52,21 +94,45 @@
     &-btn {
       padding-bottom: 20px;
       padding-top: 20px;
+      img {
+        @media(max-width: 575px){
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+      }
+      @media(max-width: 575px){
+        width: 35px;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
       &:hover {
         opacity: .7;
       }
     }
     &-minus {
       padding-left: 30px;
+      @media(max-width: 575px){
+        padding-left: 0;
+      }
     }
     &-plus {
       padding-right: 30px;
+      @media(max-width: 575px){
+        padding-right: 0;
+      }
     }
     &-count {
       display: flex;
       column-gap: 22px;
       border: 1px solid #C19CC4;
       width: fit-content;   
+      @media(max-width: 575px){    
+        text-align: center;       
+        align-items: center;
+        column-gap: 11px;
+      }
 
       input {
         width: 30px;
@@ -75,6 +141,7 @@
     }
     &-img {
       width: 125px;
+      min-width: 125px;
       height: 125px;
       object-fit: cover;
       transition: opacity .2s linear;
@@ -87,6 +154,12 @@
       max-width: 345px;
       margin-bottom: 16px;
       transition: color .2s linear;
+      @media(max-width: 1500px){
+        font-size: 18px;
+      }
+      @media(max-width: 575px){
+        font-size: 16px;
+      }
       &:hover {
        color: #C19CC4;
       }
@@ -98,6 +171,12 @@
     &-size {
       font-size: 20px;
       color: #A9A9A9;
+      @media(max-width: 1500px){
+        font-size: 18px;
+      }
+      @media(max-width: 575px){
+        font-size: 16px;
+      }
     }
   }
   &__result {
@@ -109,8 +188,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 40px; 
+   
+    @media(max-width: 991px){
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 50px;
+      width: fit-content;
+    }
+    @media(max-width: 575px){
+      padding: 25px;
+    }
     &-right {
       min-width: 362px;
+      @media(max-width: 575px){
+        min-width: unset;
+        width: 100%;
+      }
     }
     &-title {
       margin-bottom: 45px;
@@ -118,6 +212,11 @@
       line-height: 32px;
       text-transform: uppercase;      
       display: block;
+      @media(max-width: 767px){
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+      }
     }
     &-text {
       max-width: 435px;

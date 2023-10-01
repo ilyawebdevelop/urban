@@ -51,6 +51,9 @@
     column-gap: 10px;
     background: transparent;
     height: 65px;
+    @media(max-width: 767px){
+        height: 50px;
+    }
     &:hover {
         background: transparent;
     }
@@ -82,6 +85,11 @@
 .cart__result-btn{
     width: 100%;
     margin-top: 30px;
+    @media(max-width: 575px){
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 13px;
+    }
 }
 .checkout__result-btn {
     margin-top: 100px;
