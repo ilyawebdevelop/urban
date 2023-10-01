@@ -42,6 +42,16 @@ var mySwiperProduct = new Swiper(productSlider, {
         prevEl: document.querySelector('.related .nav-arrow-prev'),
         nextEl: document.querySelector('.related .nav-arrow-next'),
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+       768: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },       
+    },
 });
 
 // production-slider
@@ -59,10 +69,24 @@ document.querySelectorAll('.product').forEach(n => {
             swiper: {
                 el: n.querySelector('.production-thumb-slider'),
                 slidesPerView: 4,
-                spaceBetween: 20,
+                spaceBetween: 15,
                 direction: 'vertical',
                 speed: 600,
                 watchSlidesProgress: true,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 6,
+                        direction: 'horizontal',
+                        spaceBetween: 8,
+                    },
+                    576: {
+                        slidesPerView: 6,
+                        direction: 'vertical',
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    },
+                },
             }
         },
     });
