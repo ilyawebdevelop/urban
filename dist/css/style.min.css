@@ -11675,6 +11675,12 @@ h5 {
   max-width: unset;
   transition: transform 0.2s linear;
   overflow: scroll;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .modal-product .modal-dialog {
+    width: 100%;
+  }
 }
 .modal-product .modal-content {
   padding-top: 70px;
@@ -11682,6 +11688,13 @@ h5 {
   padding-right: 5vw;
   border: none;
   padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .modal-product .modal-content {
+    padding-top: 40px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
 
 .modal-product.fade .modal-dialog {
@@ -11704,6 +11717,11 @@ h5 {
 
 .modal-product__head {
   margin-bottom: 45px;
+}
+@media (max-width: 991px) {
+  .modal-product__head {
+    margin-bottom: 30px;
+  }
 }
 
 .header {
@@ -11744,7 +11762,7 @@ h5 {
   left: 0;
   width: 100%;
   background-color: #000;
-  z-index: 1;
+  z-index: 3;
   transition: opactity 0.2s linear, transform 0.2s linear;
   max-height: 100vh;
   height: 100vh;
@@ -13643,6 +13661,11 @@ h5 {
   flex-wrap: wrap;
   row-gap: 15px;
 }
+@media (max-width: 767px) {
+  .product__size-list {
+    column-gap: 8px;
+  }
+}
 
 .product__size-item input:checked + label {
   border-color: #C19CC4;
@@ -13659,11 +13682,23 @@ h5 {
   font-weight: 500;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  .product__size-item label {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .product__color-list {
   display: flex;
   column-gap: 15px;
   margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .product__color-list {
+    column-gap: 8px;
+    margin-bottom: 20px;
+  }
 }
 
 .product__color-item input:checked + label {
@@ -13701,12 +13736,18 @@ h5 {
 }
 @media (max-width: 575px) {
   .product__btn-wrapper {
-    column-gap: 15px;
+    column-gap: 8px;
   }
 }
 
 .product__btn {
   width: 100%;
+}
+@media (max-width: 575px) {
+  .product__btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .product__info {
@@ -13752,12 +13793,23 @@ h5 {
 .product-params {
   display: grid;
   grid-template-columns: 50% 50%;
-  column-gap: 40px;
+  column-gap: 0;
   margin-top: 50px;
   margin-bottom: 45px;
 }
+@media (max-width: 991px) {
+  .product-params {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 .product-params ul {
   padding-right: 40px;
+}
+@media (max-width: 991px) {
+  .product-params ul {
+    padding-right: 20px;
+  }
 }
 .product-params ul li {
   position: relative;

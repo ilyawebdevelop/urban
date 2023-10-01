@@ -31,6 +31,10 @@
     max-width: unset;
     transition: transform .2s linear;
     overflow: scroll;
+    margin: 0;
+    @media(max-width: 767px){
+     width: 100%;
+    }
   }
 
   .modal-content {
@@ -39,6 +43,11 @@
     padding-right: 5vw;
     border: none;
     padding-bottom: 50px;
+    @media(max-width: 991px){
+      padding-top: 40px;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
   }
 }
 
@@ -60,4 +69,7 @@
 }
 .modal-product__head {
   margin-bottom: 45px;
+  @media(max-width: 991px){
+    margin-bottom: 30px;
+  }
 }
